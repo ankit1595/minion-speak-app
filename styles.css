@@ -1,15 +1,78 @@
-textarea{
-    width: 90%;
-    padding: 0.5rem;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Righteous', cursive;
+    margin: 0px;
+    color: #333333;
+}
+:root{
+    --primary-color: #bef264;
+}
+
+main{
+    max-width: 600px;
+    margin: auto;
+    /* box-sizing: border-box; */
+    padding: 1rem;
+}
+
+.navbar{
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.hero-img{
     display: block;
-    margin: 1rem;
+    max-width: 350px;
+    margin: auto;
+    background-color: var(--primary-color);
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: large;
+    margin-top: 2rem ;
+    min-height: 20vh;
+}
+
+button{
+    background-color: var(--primary-color);
+    font-family: inherit;
+    font-size: large;
+    padding: 1rem 2rem;
+    margin: 1rem 0rem;
+    border-radius: 0.5rem;
+    border-style: none;
 }
 
 #txt-output{
     display: block;
-    /* width: 90%; */
-    border-style:solid;
-    border-width: 0.5mm;
-    height: 10vh;
-    margin: 1rem;
+    min-height: 10vh;
+    max-height: 20vh;
+    border-style: solid;
+    border-color: black;
+    color: gray;
+    border-width: 0.1rem;
+    overflow: scroll;
+} 
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
 }
+
+footer p{
+    max-width: 600px;
+    margin: auto;
+}
+
+
